@@ -3,7 +3,11 @@ const buttons = document.querySelectorAll("button");
 const dataNumber = document.querySelectorAll(".data-number");
 const clear = document.querySelector(".data-clear");
 const equal = document.querySelector(".data-equal");
+const clearOne = document.querySelector(".data-clearOne");
+
 let displayValue = "";
+
+clearOne.addEventListener("click", () => {});
 
 clear.addEventListener("click", () => {
   displayValue = "";
