@@ -25,6 +25,11 @@ for (item of dataNumber) {
 }
 
 equal.addEventListener("click", () => {
-  displayValue = eval(displayValue).toString();
-  display.innerHTML = displayValue;
+  try {
+    displayValue = eval(displayValue).toString();
+    display.innerHTML = displayValue;
+  } catch (e) {
+    console.log(e);
+    alert("PLEASE INPUT VALID EXPRESSION");
+  }
 });

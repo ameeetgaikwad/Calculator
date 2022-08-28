@@ -32,6 +32,13 @@ button {
   font-size: 20px;
   box-sizing: border-box;
 }
+button:hover {
+  cursor: pointer;
+  background-color: #f0eeee;
+}
+button:active {
+  background-color: rgb(236, 234, 234);
+}
 
 tr {
   display: flex;
@@ -39,6 +46,8 @@ tr {
 }
 
 table {
+  cursor: pointer;
+
   background-color: #f9f9f9;
   font-size: 30px;
   width: 25%;
@@ -78,4 +87,18 @@ CF8D8A red
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-family: "Oswald", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #355764;
+}
+.twitter {
+  text-decoration: none;
+  color: #5a8f7b;
+}
+.twitter:hover {
+  text-decoration: underline;
 }
