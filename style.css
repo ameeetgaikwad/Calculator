@@ -7,6 +7,8 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  text-decoration: none;
+  color: #002b5b;
 }
 
 /* table */
@@ -17,31 +19,42 @@ body {
 }
 
 button {
-  color: #22252d;
-  width: 110px;
+  color: #256d85;
+  width: 95px;
   background-color: #f6f6f6;
+  /* background-color: #701c1c; */
   padding: 25px 25px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
-  font-size: large;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
 }
 
 table {
   background-color: #f9f9f9;
   font-size: 30px;
-  width: 30%;
+  width: 25%;
   border-radius: 10px;
 }
 
 .red {
-  color: #cf8d8a;
+  color: #06283d;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .blue {
-  color: #80efda;
+  color: #8fe3cf;
+  font-weight: 500;
+  font-size: 25px;
 }
 /* FEFFFE white
 F9F9F9 grey
@@ -51,9 +64,18 @@ CF8D8A red
 
 /* display */
 .display {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
   background-color: white;
   height: 200px;
-  width: 30%;
+  width: 25%;
   margin: auto;
   border-radius: 10px;
+  padding: 40px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
 }

@@ -7,7 +7,10 @@ const clearOne = document.querySelector(".data-clearOne");
 
 let displayValue = "";
 
-clearOne.addEventListener("click", () => {});
+clearOne.addEventListener("click", () => {
+  displayValue = displayValue.slice(0, -1);
+  display.innerHTML = displayValue;
+});
 
 clear.addEventListener("click", () => {
   displayValue = "";
@@ -22,6 +25,6 @@ for (item of dataNumber) {
 }
 
 equal.addEventListener("click", () => {
-  display.innerHTML = eval(displayValue);
-  displayValue = "";
+  displayValue = eval(displayValue).toString();
+  display.innerHTML = displayValue;
 });
