@@ -1,5 +1,6 @@
 body {
   background-color: #efeeef;
+  color: black;
 }
 
 /* header */
@@ -9,6 +10,8 @@ body {
   padding-top: 10px;
   text-decoration: none;
   color: #002b5b;
+  width: 80%;
+  margin: auto;
 }
 
 /* table */
@@ -65,11 +68,6 @@ table {
   font-weight: 500;
   font-size: 25px;
 }
-/* FEFFFE white
-F9F9F9 grey
-CF8D8A red
-80EFDA blue
-22252D black */
 
 /* display */
 .display {
@@ -102,3 +100,50 @@ footer {
 .twitter:hover {
   text-decoration: underline;
 }
+
+.moon,
+.sun {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark-mode-table {
+  background-color: #2a2d37;
+}
+.dark-mode-button {
+  background-color: #1f3036;
+}
+.dark-mode-table {
+  background-color: #212f34;
+}
+.dark-mode-red {
+  color: white;
+}
+.dark-mode-body {
+  background-color: #242525;
+}
+.dark-mode-button:hover {
+  background-color: #182529;
+}
+.sun {
+  color: white;
+}
+.dark-mode-header {
+  color: wheat;
+}
+.dark-mode-display {
+  color: white;
+  background-color: #1f3036;
+}
+
+/* FEFFFE white
+F9F9F9 grey
+CF8D8A red
+80EFDA blue
+22252D black */
