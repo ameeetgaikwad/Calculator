@@ -31,15 +31,18 @@ for (item of dataNumber) {
   });
 }
 
-equal.addEventListener("click", () => {
+equalFunction = function () {
   try {
     displayValue = eval(displayValue).toString();
     display.innerHTML = displayValue;
+    displayValue = "";
   } catch (e) {
     console.log(e);
     alert("PLEASE INPUT VALID EXPRESSION");
   }
-});
+};
+
+equal.addEventListener("click", equalFunction);
 for (item of themeButton) {
   item.addEventListener("click", () => {
     sun.classList.toggle("hidden");
@@ -56,3 +59,26 @@ for (item of themeButton) {
     header.classList.toggle("dark-mode-header");
   });
 }
+
+// Keyborad events
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key <= 9 ||
+    e.key == "+" ||
+    e.key == "-" ||
+    e.key == "*" ||
+    e.key == "." ||
+    e.key == "/" ||
+    e.key == "%" ||
+    e.key == "(" ||
+    e.key == ")"
+  ) {
+    displayValue += e.key;
+    display.innerHTML = displayValue;
+  } else if (e.key == "Backspace") {
+    displayValue = displayValue.slice(0, -1);
+    display.innerHTML = displayValue;
+  } else if (e.key == "Enter") {
+    equalFunction();
+  }
+});
