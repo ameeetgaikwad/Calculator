@@ -26,6 +26,9 @@ clear.addEventListener("click", () => {
 
 for (item of dataNumber) {
   item.addEventListener("click", (e) => {
+    // let newElement = document.createElement("span");
+    // newElement.innerText = e.key;
+    // display.appendChild(newElement);
     displayValue += e.target.innerHTML;
     display.innerHTML = displayValue;
   });
@@ -75,10 +78,17 @@ document.addEventListener("keydown", function (e) {
   ) {
     displayValue += e.key;
     display.innerHTML = displayValue;
+    // let newElement = document.createElement("span");
+    // newElement.innerText = e.key;
+    // display.appendChild(newElement);
   } else if (e.key == "Backspace") {
     displayValue = displayValue.slice(0, -1);
     display.innerHTML = displayValue;
   } else if (e.key == "Enter") {
     equalFunction();
   }
+});
+
+header.addEventListener("click", () => {
+  location.reload();
 });
